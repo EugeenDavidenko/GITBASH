@@ -27,3 +27,20 @@ http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
 Разве пройдя по ссылке мы уже не направили запрос? В данном случае get.
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash
+# комментарий
+cd directory
+mkdir foldername_1 foldername_2 foldername_3
+cd foldername_1
+touch file_1.txt file_2.txt file_3.txt file_5.json file_6.json
+mkdir foldername_4 foldername_5 foldername_6
+ls
+mv file_1.txt file_5.json foldername_6
+
+Проверил, работает
+
+
+
+
+
