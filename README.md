@@ -1,7 +1,9 @@
 http://webdesign.ru.net/article/pravila-oformleniya-fayla-readmemd-na-github.
 
 Посмотреть где я: `pwd`
+
 <hr> Создать папку: `mkdir foldername`
+
 Зайти в папку: cd foldername
 Создать 3 папки: mkdir foldername_1 foldername_2 foldername_3
 Зайти в любоую папку: cd foldername_1
