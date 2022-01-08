@@ -30,9 +30,21 @@ less -N file.txt - выводит содержимое файла с номер�
 =========
 
 Задание *
-1) Отправить http запрос на сервер. 
-http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000 === curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
+1) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request === curl 'http://162.55.220.72:5005/terminal-hw-request'
+получаем ответ
 
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   1923      0 --:--:-- --:--:-- --:--:--  1958{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+
+составляем запрос === http://162.55.220.72:5005/get_method?name=Eugeen&age=35
+отправляем запрос === curl 'http://162.55.220.72:5005/get_method?name=Eugeen&age=35'
+получаем ответ
+$ curl 'http://162.55.220.72:5005/get_method?name=Eugeen&age=35'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    16  100    16    0     0    128      0 --:--:-- --:--:-- --:--:--   131["Eugeen","35"]
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
