@@ -33,9 +33,17 @@ git push -u origin Charles
 git push -u origin Mobile_testing
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+touch Bugreport_structure.txt --> vim Bugreport_structure.txt -->ESC:wq
+
 4. Запушить структуру багрепорта на внешний репозиторий
+git status --> git add Bugreport_structure.txt -->git commit -m "создал и заполнил Bugreport_structure.txt" --> git push
+
 5. Вмержить ветку Bag Reports в Main
+git checkout main ---> git merge Bag_Reports
+
 6. Запушить main на внешний репозиторий.
+
+
 7. В ветке CheckLists набросать структуру чек листа.
 8. Запушить структуру на внешний репозиторий
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
