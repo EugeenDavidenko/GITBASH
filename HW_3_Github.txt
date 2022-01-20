@@ -9,7 +9,7 @@ git branch Jmeter
 git branch CheckLists
 
 - Bag Reports
-git branch Bag_Reports
+git branch Bug_Reports
 
 - SQL
 git branch SQL
@@ -27,7 +27,7 @@ git checkout название_ветки - переход в ветку
 git push -u origin Postman
 git push -u origin Jmeter
 git push -u origin Checklists
-git push -u origin Bag_Reports
+git push -u origin Bug_Reports
 git push -u origin SQL
 git push -u origin Charles
 git push -u origin Mobile_testing
@@ -36,7 +36,7 @@ git push -u origin Mobile_testing
 
 git push -u origin --all
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта
 touch Bugreport_structure.txt --> vim Bugreport_structure.txt -->ESC:wq
 
 		СТРУКТУРА БАГРЕПОРТА:
@@ -70,7 +70,7 @@ ATTACHMENT-файл с логами, скриншот, любой другой �
 git status --> git add Bugreport_structure.txt -->git commit -m "создал и заполнил Bugreport_structure.txt" --> git push
 
 5. Вмержить ветку Bag Reports в Main
-git checkout main ---> git merge Bag_Reports
+git checkout main ---> git merge Bug_Reports
 
 6. Запушить main на внешний репозиторий.
 git status --> git push
